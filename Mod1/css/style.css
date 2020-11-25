@@ -1,0 +1,47 @@
+body {
+    background: fixed;
+    background-color: #0000006b;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    background-color: #238859;
+    position: top;
+    width: 100% auto;
+    height: 45px;
+    padding: 7px;
+}
+
+.titulo-principal {
+
+    position: relative;
+    text-align: left;
+}
+
+article {
+    position: relative;
+    text-align: left;
+}
+
+.artigo-1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-style: italic;
+    width: 400px;
+    padding: 7px;
+}
+
+h6 {
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    position: relative;
+    text-align: left;
+    padding: 8px;
+}
+
+footer {
+    background-color: #4d2388;
+    position: bottom;
+    width: 100% auto;
+    height: 60px;
+}
