@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Links Internos</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click.smoothscroll',function (e) {
+                    e.preventDefault();
+            
+                    var target = this.hash,
+                    $target = $(target);
+            
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                });
+            });
+            </script>
+    </head>
+    <body>
+        <div class="titulo-principal" id="topo">
+            <h2>
+            <a href="#flamengo">Flamengo</a>
+            <a href="#vasco">Vasco</a>
+            <a href="#fluminense">Fluminense</a>
+            <a href="#botafogo">Botafogo</a>
+            <a href="#america">America</a>
+            </h2>
+        </div>
+        <div class="times" id="flamengo">
+            <h2>FLAMENGO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <img src="../assets/flamengo.png" class="img-flamengo" alt="Flamengo"/>
+            <br><br>
+            <a href="#topo"><h3>Voltar ao Menu</h3></a>
+        </div>
+        <div class="times" id="vasco">
+            <h2>VASCO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <img src="../assets/vasco.png" class="img-vasco" alt="Vasco"/>
+            <br><br>
+            <a href="#topo"><h3>Voltar ao Menu</h3></a>
+        </div>
+        <div class="times" id="fluminense">
+            <h2>FLUMINENSE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <img src="../assets/fluminense.png" class="img-fluminense" alt="Fluminense"/>
+            <br><br>
+            <a href="#topo"><h3>Voltar ao Menu</h3></a>
+        </div>
+        <div class="times" id="botafogo">
+            <h2>BOTAFOGO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <img src="../assets/botafogo.png" class="img-botafogo" alt="Botafogo"/>
+            <br><br>
+            <a href="#topo"><h3>Voltar ao Menu</h3></a>
+        </div>
+        <div class="times" id="america">
+            <h2>AMERICA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime est exercitationem deleniti ducimus rerum natus praesentium omnis! Eaque sit voluptate tempora nesciunt voluptatibus consequatur ad expedita. Consequatur, possimus error!</p>
+            <img src="../assets/america.png" class="img-america" alt="America"/>
+            <br><br>
+            <a href="#topo"><h3>Voltar ao Menu</h3></a>
+        </div>
+        <footer>
+            <h6>Rodapé</h6>
+        </footer>
+    </body>
+</html>

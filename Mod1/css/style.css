@@ -1,47 +1,160 @@
 body {
     background: fixed;
-    background-color: #0000006b;
+    background-color: #000000ab;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 h1 {
+    color: #ffffff;
     font-size: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
-    background-color: #238859;
-    position: top;
-    width: 100% auto;
-    height: 45px;
-    padding: 7px;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+h3 {
+    color: #dcd758;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+h3 a {
+    color: #dcd758;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    text-decoration: none;
 }
 
 .titulo-principal {
-
-    position: relative;
-    text-align: left;
-}
-
-article {
-    position: relative;
-    text-align: left;
-}
-
-.artigo-1 {
+    background-color: #238859;
+    font-size: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
-    font-style: italic;
-    width: 400px;
+    font-style: bold;
+    text-align: left;
+    margin-right: 7px;
+    width: 100% auto;
+    height: 45px;
     padding: 7px;
+    position: static;
+    left: 0;
+    top: 0;
+}
+
+.titulo-principal a {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.artigo-phone-1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-size: 16px;
+    width: 220px;
+    padding: 7px;
+    margin-top: 140px;
+    margin-bottom: 10px;
+    margin-left: 90px;
+    position: absolute;
+    text-align: left;
+}
+
+.artigo-phone-2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-size: 16px;
+    width: 190px;
+    padding: 7px;
+    margin-top: 750px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    position: absolute;
+    text-align: left;
+}
+
+.img-smartphone1 {
+    width: 600px;
+    height: 600px;
+    margin-top: 5px;
+    position: static;
+    display: inline-block;
+}
+
+.img-smartphone2 {
+    width: 460px;
+    height: 585px;
+    margin-top: 10px;
+    position: static;
+    display: inline-block;
+}
+
+.img-heineken {
+    width: 150px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
 }
 
 h6 {
+    color: #ffffff;
     font-size: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
-    position: relative;
-    text-align: left;
-    padding: 8px;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-left: 15px;
 }
 
 footer {
     background-color: #4d2388;
-    position: bottom;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-style: bold;
+    text-align: left;
     width: 100% auto;
-    height: 60px;
+    height: 45px;
+    padding: 7px;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    position: static;
+}
+
+.times {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    width: 550px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    text-align: left;
+    position: static;
+}
+
+.img-flamengo,
+.img-vasco,
+.img-fluminense,
+.img-botafogo,
+.img-america {
+    width: 40%;
+    height: 40%px;
 }
