@@ -1,51 +1,89 @@
 <!doctype html>
-<!--Criar uma página HTML de tema livre, está página deverá conter obrigatoriamente os seguintes itens:
-1- Título do Tema escolhido;
-2- Subtítulo;
-3- Um texto de mais ou menos 5 linhas sobre o tema;
-4- Uma imagem ilustrando o conteúdo do texto;
-5- Um outro subtítulo;
-6- Um texto de mais ou menos 5 linhas sobre o tema;
-7- Uma imagem ilustrando o conteúdo do subtítulo
+<!--Replicar exemplo do PDF enviado
 =========================================================================================================-->
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Ex1 | Smartphones</title>
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <title>Ex3 | DriveSpark</title>
+        <link rel="stylesheet" type="text/css" href="../css/drivespark.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('a[href^="#"]').on('click.smoothscroll',function (e) {
+                        e.preventDefault();
+                
+                        var target = this.hash,
+                        $target = $(target);
+                
+                        $('html, body').stop().animate({
+                            'scrollTop': $target.offset().top
+                        }, 900, 'swing', function () {
+                            window.location.hash = target;
+                        });
+                    });
+                });
+            </script>
     </head>
     <body>
-        <div class="menu-2" id="topo">
+        <img class="img-logo"  id="topo" title="logo" alt="Logo DriveSpark" src="../assets/logo.png"/>
+        <div class="menu-spark">
             <h2>
-            <a href="#p1">Pergunta 1</a>
-            <a href="#p2">Pergunta 2</a>
-            <a href="#p3">Pergunta 3</a>
-            <a href="#p4">Pergunta 4</a>
-            <a href="#p5">Pergunta 5</a>
-            <a href="#p6">Pergunta 6</a>
-            <a href="#p7">Pergunta 7</a>
-            <a href="#p8">Pergunta 8</a>
-            <a href="#p9">Pergunta 9</a>
-            <a href="#p10">Pergunta 10</a>
+            <a href="#Home">Home</a>
+            <a href="#Carros">Carros</a>
+            <a href="#Motos">Motos</a>
+            <a href="#Lançamentos">Lançamentos</a>
+            <a href="#Fotos">Fotos</a>
+            <a href="#Contato">Contato</a>
             </h2>
         </div>
         </div>
-        <h2>Sistemas Operacioanais mais utilizados nos smartphones atualmente</h2>
-        <article class="artigo-phone-1">
-            <h3>Android</h3>
-            Android é o sistema operacional móvel do Google. Presente em múltiplos aparelhos de diversas fabricantes, como Samsung, Motorola, LG, e Sony, é a plataforma mobile mais popular do mundo. É conhecido por ser baseado no núcleo do Linux, ter um código aberto e uma série de possibilidades de personalização.
+        <h2>Honda Civic Tourer Concept (2013)</h2>
+        <img class="img-carro" title="Carro" alt="Carro de frente" src="../assets/carro.jpg"/>
+        <article class="artigo-carro-1">
+            <p>Novidade da Honda para o Salão de Genebra é o Civic Tourer Concept, versão conceitual de uma hipotética
+            versão wagon do bem-sucedido sedan japonês, em produção desde 1971. O Civic não conta com uma variante
+            perua desde a sexta geração, em produção até 2001. O conceito adianta linhas futuristas e imponentes que,
+            apesar de ainda lembrarem o estilo atual, inaugurado pelo New Civic em 2006, começam a se distanciar da mesmice
+            em que a nona geração mergulhou.</p>
         </article>
-        <img class="img-smartphone1" title="samsung" alt="mão segurando smartphone samsung" src="../assets/smartphone1.png"/>
-        
-        <article class="artigo-phone-2">
-            <h3>iOS</h3>
-            iOS (antes chamado de iPhone OS) é um sistema operacional móvel da Apple Inc. desenvolvido originalmente para o iPhone, iPod Touch e o iPad até a introdução do iPadOS em 2019, um sistema derivado do iOS. A Apple não permite que o iOS seja executado em hardware de terceiros.
+        <img class="img-carro-2" title="Carro2" alt="Carro de costas" src="../assets/carro2.jpg"/>
+        <article class="artigo-carro-2">
+            <p>O formato dos faróis lembra os atuais, mas está com ângulos mais agudos e a linha do para-choque liga os
+                dois faróis. Na lateral, a maçaneta oculta nas colunas C trás uma imagem elegante e nos faz lembrar que um
+                dia as montadoras tiveram a coragem de vender peruas com duas portas. Fotos do interior não foram divulgadas.</p>
+            <p>Na traseira está o grande trunfo visual. Lanternas imensas invadem a lateral, mesclando o conceito de escultura
+                fluida da Hyundai com alguns aspectos da BMW. Ambas as lanternas são conectadas por uma extensão
+                na cor das ditas cujas. Vincos esportivos completam o visual da traseira, que é completamente diferente do que
+                vimos na Honda até hoje. O Salão está abertoi ao público até 17 de março.</p>
+            <p>As Opções de motor irão ser as mesmas do Hatchback:</p>
+                <table>
+                    <tr>
+                        <th>Versão</th>
+                        <th>Motorização</th>
+                    </tr>
+                    <tr>
+                        <td>1,4-litros i-VTEC</td>
+                        <td>100 cv e 127 Nm de Binário</td>
+                    </tr>
+                    <tr>
+                        <td>1,8-litros i-VTEC</td>
+                        <td>142 cv e 174 Nm de Binário</td>
+                    </tr>
+                    <tr>
+                        <td>2,2-litros i-DTEC diesel</td>
+                        <td>150 cv e 350 Nm de Binário</td>
+                    </tr>
+                    <tr>
+                        <td>1,6-litros i-DTEC diesel</td>
+                        <td>120 cv e 300 Nm de Binário</td>
+                    </tr>
+                </table>
+            <p>Mais detalhes mecânicos e imagens do interior serão no salão de Genebra</p>
+            <h3><a href="#topo"><img class="img-page-top" title="Topo da página" alt="Voltar ao topo da tela" src="../assets/page-top.png"/>Voltar ao Menu</a></h3>
         </article>
-        <img class="img-smartphone2" title="iphone" alt="mão segurando iphone" src="../assets/smartphone2.png"/>
 
-        <script src="" async defer></script>
         <footer>
-            <h6>Rodapé</h6>
+            <p>Desenvolvido por Vinicius</p>
         </footer>
     </body>
 

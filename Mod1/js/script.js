@@ -1,3 +1,4 @@
+// inicio função para exibir e ocultar respostas
 function p1() {
   var x = document.getElementById("DIVp1");
   if (x.innerHTML === "O evento onload não dispara até que a última parte da página seja carregada, isto inclui CSS e imagens, o que significa mais tempo antes que o código seja executado. Em geral onload não é o recomendado. O ideal é esperar até que o DOM seja carregado para que possa ser manipulado e esse é o papel do onDocumentReady.") {
@@ -79,3 +80,4 @@ function p10() {
       x.innerHTML = "A funcao acima irá retornar o seguinte: a defined? false  |  b defined? true. Isso porquê quando atribuído o valor de b a variável a, b ainda não havia sido definida. Já à variável b foi atribuído o valor 3 diretamente.";
     }
 }
+// fim função para exibir e ocultar respostas
