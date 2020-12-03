@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Formulários</title>
+        <link rel="stylesheet" href="">
+    </head>
+
+    <body>
+        <h2>Formulário 1 - Tipo Text</h2>
+
+        <form action="envia.php" method="GET">
+            <!--GET é mais usado em BUSCAS-->
+            <label for="nome">Nome:</label>
+            <input placeholder="Digite aqui" type="text" name="txtNome" id="nome">
+        </form>
+
+        <h2>Formulário 2 - Tipo Password</h2>
+
+        <form action="envia.php" method="POST">
+            <!--POST é usado sempre que a informação é sensível. É o mais usado-->
+            <input placeholder="converte em ***" type="password" name="">
+        </form>
+
+        <h2>Formulário 3 - Tipo Email</h2>
+
+        <form action="envia.php" method="GET">
+            <input placeholder="email@domain" type="email" name="">
+        </form>
+
+        <h2>Formulário 3 - Tipo Date</h2>
+
+        <form action="envia.php" method="GET">
+            <input type="date" name="">
+        </form>
+    </body>
+
+</html>
