@@ -8,31 +8,65 @@
     </head>
 
     <body>
-        <h2>Formulário 1 - Tipo Text</h2>
+        <h2>Formulário 1 - Tipo Text e Password</h2>
 
         <form action="envia.php" method="GET">
             <!--GET é mais usado em BUSCAS-->
             <label for="nome">Nome:</label>
-            <input placeholder="Digite aqui" type="text" name="txtNome" id="nome">
-        </form>
-
-        <h2>Formulário 2 - Tipo Password</h2>
-
-        <form action="envia.php" method="POST">
+            <input placeholder="Digite aqui" type="text" name="txtNome" id="nome"><br><br>
             <!--POST é usado sempre que a informação é sensível. É o mais usado-->
-            <input placeholder="converte em ***" type="password" name="">
+            <label for="senha">Senha:</label>
+            <input placeholder="converte em ***" type="password" name="txtSenha" id="senha"><br><br>
+            <input placeholder="" type="button" name="submit" value="Enviar">
         </form>
 
-        <h2>Formulário 3 - Tipo Email</h2>
-
-        <form action="envia.php" method="GET">
-            <input placeholder="email@domain" type="email" name="">
+        <h2>Formulário 2 - Tipo Email</h2>
+        <form action="envia.php" method="POST">
+            <input placeholder="email@domain" type="email" name="txtEmail">
+            <input placeholder="" type="button" name="submit" value="Enviar">
         </form>
 
         <h2>Formulário 3 - Tipo Date</h2>
-
         <form action="envia.php" method="GET">
-            <input type="date" name="">
+            <input type="date" name="txtData">
+            <input placeholder="" type="button" name="submit" value="Enviar">
+        </form>
+        <br><br>
+
+        <form action="envia.php" method="POST">
+            <h2>Type "Radio"</h2>
+            <label>Estado Civil</label><br><br>
+            <input type="radio" name="txtEstadoCivil" value="casado" id="casado" checked>
+            <label for="casado">Casado</label><br>
+            <input type="radio" name="txtEstadoCivil" value="solteiro" id="solteiro">
+            <label for="solteiro">Solteiro</label><br>
+            <input type="radio" name="txtEstadoCivil" value="viuvo" id="viuvo">
+            <label for="viuvo">Viúvo</label><br><br>
+            <h2>Type "Checkbox"</h2>
+            <label>Marque seus interesses</label><br>
+            <input type="checkbox" name="txtInteresses" value="tv" id="televisao">
+            <label for="televisao">Televisão</label>
+            <input type="checkbox" name="txtInteresses" value="radio" id="radio">
+            <label for="radio">Rádio</label>
+            <input type="checkbox" name="txtInteresses" value="cinema" id="cinema">
+            <label for="cinema">Cinema</label>
+            <br><br>
+            <input type="checkbox" name="txtCad" value="sim" id="cad" checked>
+            <label for="cad">Desejo receber informações por e-mail</label>
+            <br><br>
+            <h2>Método SELECT</h2>
+            <label for="time">Escolha seu time </label>
+            <select name="txtTime" id="time">
+                <option value="Flamengo">Flamengo</option>
+                <option value="Vasco">Vasco</option>
+                <option value="Fluminense">Fluminense</option>
+                <option value="Botafogo">Botafogo</option>
+            </select><br><br>
+            <h2>Método "TextArea"</h2>
+            <label for="msg">Mensagem</label><br>
+            <textarea name="txtMsg" id="msg"></textarea>
+            <br><br>
+            <input placeholder="" type="button" name="submit" value="Enviar">
         </form>
     </body>
 
