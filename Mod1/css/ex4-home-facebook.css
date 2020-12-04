@@ -1,0 +1,46 @@
+body {
+    background: #f0f2f5;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #fff;
+}
+
+.facebook-logo {
+    height: 106px;
+    margin: -28px;
+    border: 0;
+}
+
+.facebook-description {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    padding: 0 0 20px;
+}
+
+.login-button {
+    color: #fff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: bold;
+    justify-content: center;
+    padding: 0 8px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+}
