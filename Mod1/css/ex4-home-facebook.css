@@ -2,8 +2,6 @@ body {
     background: #f0f2f5;
     margin: 0;
     padding: 0;
-    position: relative;
-    min-width: 200px;
 }
 
 .facebook-description-principal {
@@ -72,6 +70,7 @@ body {
     margin-bottom: -5px;
     line-height: 16px;
     vertical-align: middle;
+    outline-color: #1877f2;
 }
 
 .login-button {
@@ -81,19 +80,14 @@ body {
     border-radius: 6px;
     font-size: 20px;
     line-height: 48px;
-    padding: 0 16px;
     margin-top: 18px;
     width: 360px;
     cursor: pointer;
-    display: inline-block;
     text-decoration: none;
-    white-space: nowrap;
     font-weight: bold;
     justify-content: center;
-    padding: 0 8px;
     position: relative;
     text-align: center;
-    text-shadow: none;
     vertical-align: middle;
 }
 
@@ -157,8 +151,7 @@ body {
     clear: both;
     position: static;
     min-height: 220px;
-    margin: 0 auto;
-    margin-bottom: 0 auto;
+    margin: 0;
     width: 100%;
 }
 
