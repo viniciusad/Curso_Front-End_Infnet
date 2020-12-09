@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Pseudo-classes</title>
+
+        <style>
+            /* a:link {
+                color: green;
+            }
+
+            a:visited {
+                color: red;
+            }
+
+            a:active {
+                color: blue;
+            } */
+
+            a {
+                color: green;
+                text-decoration: none;
+                background-color: orange;
+                padding: 5px 15px;
+            }
+
+            a:hover {
+                color: orange;
+                background-color: green;
+                text-decoration: underline;
+            }
+
+            .carro {
+                border-radius: 0;
+                transition: all 0.5s;
+            }
+
+            .carro:hover {
+                border-radius: 50%;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1><a href="https://google.com.br" target="_blank" title="Ir para Google">Pseudo-classes do
+                CSS</a></h1>
+        <br><br>
+
+        <img src="./assets/carro.jpg" alt="Carro" class="carro">
+    </body>
+
+</html>
