@@ -1,0 +1,56 @@
+body {
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.bg-roxo {
+  background-color: #612f74;
+  height: 500px;
+  float: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.box1 {
+  width: 50%;
+  float: left;
+  margin: 0 10% 0 10%;
+}
+.box2 {
+  width: 50%;
+  float: left;
+  margin: 2% 10% 0 10%;
+}
+
+img {
+  max-width: 80%;
+  padding: 10px;
+}
+p {
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin: 0px 0px 32px;
+  line-height: 1.16;
+}
+a {
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 00;
+  text-decoration: none;
+}
+h3 {
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  color: rgb(192, 147, 251);
+  margin: 120px 0 15px;
+  line-height: 1.16;
+}

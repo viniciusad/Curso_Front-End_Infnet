@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        
+        body {
+            background-color: #FFFFFF;
+            margin: 0 auto;
+        }
+        .bg-roxo {
+            background-color: #612F74;
+            height: 500px;
+            float: center;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .box1 {
+            width: 50%;
+            float: left;
+            margin: 0 10% 0 10%;
+        }
+        .box2 {
+            width: 50%;
+            float: left;
+            margin: 2% 10% 0 10%;
+        }
+
+        img {
+            max-width: 80%;
+            padding: 10px;
+        }
+        p {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 48px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin: 0px 0px 32px;
+            line-height: 1.16;
+            
+        }
+        a {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: 400;
+            text-decoration: none;
+        }
+        h3 {
+            font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 48px;
+            color: rgb(192, 147, 251);
+            margin: 120px 0 15px;
+            line-height: 1.16;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-roxo">
+        <div class="container">
+            <div class="box1">
+                <h3>Rewards</h3>
+                <p>Um programa de pontos justo e fácil de usar.</p>
+                <a href="https://blog.nubank.com.br/nubank-rewards-tudo-sobre/">Saiba mais</a>
+            </div>
+            <div class="box2">
+                <img src="https://nubank.com.br/_next/static/images/09cdb2f9d9f1fc90aff34de3ccfc8cfe-rewards-home-card@1x.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
