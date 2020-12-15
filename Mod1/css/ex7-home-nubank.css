@@ -1,9 +1,19 @@
 body {
   background-color: #ffffff;
   margin: 0 auto;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .bg-branco {
   background-color: #ffffff;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+}
+.bg-cinza {
+  background-color: #f2f2f2;
   justify-content: center;
   position: relative;
   display: flex;
@@ -18,11 +28,94 @@ body {
   text-rendering: optimizelegibility;
   text-size-adjust: 100%;
 }
+.bg-roxo2 {
+  background-color: rgb(138, 5, 190);
+  justify-content: left;
+  position: relative;
+  display: flex;
+  text-size-adjust: 100%;
+  align-self: stretch;
+  margin: 0;
+}
 .container {
   width: 100%;
   display: flex;
   overflow: hidden;
   box-sizing: border-box;
+}
+.box1-pix {
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  margin: 12% 0 10% 5%;
+  align-self: stretch;
+}
+.white-text-pix {
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.16;
+}
+.box2-pix {
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  margin: 10%;
+}
+.request-card-box {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 60%;
+  height: 40%;
+  float: left;
+  box-sizing: border-box;
+  margin: 15% 5% 15% 5%;
+  padding: 2%;
+  vertical-align: middle;
+}
+.request-card-box p {
+  color: rgb(17, 17, 17);
+  font-size: 24px;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0px 0px 32px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+.cpf {
+  background-color: transparent;
+  border-width: 0px 0px 1px;
+  box-sizing: border-box;
+  color: rgb(17, 17, 17);
+  display: block;
+  margin-bottom: 30px;
+  padding: 8px 0px;
+  text-align: left;
+  outline: none;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(17, 17, 17, 0.2);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.request-card-button {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  background: rgb(138, 5, 190);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-align: left;
+  height: 45px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  outline: 0px;
+  position: relative;
+  border: 0px;
 }
 .box1 {
   width: 60%;
@@ -89,7 +182,33 @@ img.arrow-external-link {
   padding: 0 0 2px 10px;
   width: 13px;
 }
-
+.saiba-mais,
+.underline-roxo {
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(138, 5, 190);
+  font-weight: 00;
+  text-decoration: none;
+}
+a.underline-roxo {
+  position: relative;
+}
+a.underline-roxo:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(138, 5, 190);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+a.underline-roxo:hover:before {
+  visibility: visible;
+  width: 100%;
+}
 .title-rewards {
   font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -106,6 +225,9 @@ img.arrow-external-link {
 }
 .title-rewards:hover {
   text-decoration: underline;
+}
+.img-pix {
+  float: left;
 }
 .img-rewards {
   max-width: 500%;
