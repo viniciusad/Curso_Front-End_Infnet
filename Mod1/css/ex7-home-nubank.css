@@ -4,10 +4,73 @@ body {
   font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
     "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+.header {
+  background-color: #ffffff;
+  color: rgb(17, 17, 17);
+  font-size: 20px;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 80px;
+  position: fixed !important;
+  box-sizing: border-box;
+}
+.header ul {
+  background-color: #ffffff;
+  color: rgba(17, 17, 17, 0.7);
+  font-size: 18px;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: none;
+}
+.header li {
+  display: inline;
+  float: left;
+  padding: 11px 18px 0 0;
+}
+.header a {
+  color: rgba(17, 17, 17, 0.7);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+a.link-rosa:hover {
+  color: rgb(213, 125, 255);
+}
+.header img {
+  display: inline;
+  float: left;
+  margin: -30px 0 0 -30px;
+  width: 80px;
+}
+li.underline-roxo {
+  position: relative;
+}
+li.underline-roxo:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(138, 5, 190);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+li.underline-roxo:hover:before {
+  visibility: visible;
+  width: 100%;
+  /*color: rgb(138, 5, 190);*/
+}
+a.link-roxo {
+  color: rgb(138, 5, 190);
+}
 .bg-branco {
   background-color: #ffffff;
   justify-content: center;
-  position: relative;
   display: flex;
   text-rendering: optimizelegibility;
   text-size-adjust: 100%;
@@ -15,7 +78,6 @@ body {
 .bg-cinza {
   background-color: #f2f2f2;
   justify-content: center;
-  position: relative;
   display: flex;
   text-rendering: optimizelegibility;
   text-size-adjust: 100%;
@@ -23,7 +85,6 @@ body {
 .bg-roxo {
   background-color: rgb(83, 0, 130);
   justify-content: center;
-  position: relative;
   display: flex;
   text-rendering: optimizelegibility;
   text-size-adjust: 100%;
@@ -31,11 +92,30 @@ body {
 .bg-roxo2 {
   background-color: rgb(138, 5, 190);
   justify-content: left;
-  position: relative;
   display: flex;
   text-size-adjust: 100%;
   align-self: stretch;
   margin: 0;
+}
+.bg-foto-blog {
+  background-color: rgb(138, 5, 190);
+  background-image: url(../assets/nubank/holding-device-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 0;
+  justify-content: left;
+  display: flex;
+  text-size-adjust: 100%;
+  align-self: stretch;
+  margin: 0;
+  height: 800px;
+}
+.box1-blog {
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  margin: 12% 0 10% 5%;
+  align-self: stretch;
 }
 .container {
   width: 100%;
@@ -157,7 +237,6 @@ body {
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: rgb(255, 255, 255);
-  font-weight: 00;
   text-decoration: none;
 }
 a.underline {
@@ -188,7 +267,6 @@ img.arrow-external-link {
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: rgb(138, 5, 190);
-  font-weight: 00;
   text-decoration: none;
 }
 a.underline-roxo {
@@ -229,7 +307,75 @@ a.underline-roxo:hover:before {
 .img-pix {
   float: left;
 }
+.img-girl-holding-card {
+  max-width: 150%;
+  float: left;
+}
 .img-rewards {
   max-width: 500%;
   float: left;
+}
+footer {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.bg-preto-links {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.bg-preto-links ul {
+  display: inline;
+  padding: 6px;
+  /*row-gap: 48px;*/
+}
+.bg-preto-links li {
+  display: block;
+  margin: 0px;
+  padding: 6px;
+}
+.bg-preto-links a {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+}
+.link-title {
+  font-size: 18px;
+  font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  list-style-type: none;
+}
+.bg-preto-links a:hover {
+  color: rgb(213, 125, 255);
+}
+.company {
+  margin: 10px 10px 0 40px;
+}
+.logo-bg-black {
+  justify-content: left;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  display: inline;
+}
+.social a {
+  text-decoration: none;
+  list-style-type: none;
+}
+.icons img {
+  margin: 15px 10px;
 }
