@@ -327,7 +327,7 @@ header {
   position: flex;
   clear: both;
   overflow: hidden;
-  padding: 70px 110px;
+  padding: 70px 0 110px;
 }
 .team .box4 {
   text-align: center;
@@ -560,4 +560,124 @@ footer .formulario .btn-md {
   border: 2px solid #49cbcd;
   transition: background-color 0.3s;
   cursor: pointer;
+}
+
+/* ==================================================================
+                          MEDIA QUERIES
+================================================================== */
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: 980px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    /* width: 768px; */
+    width: 100%;
+  }
+  .box4 {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .cliente p {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  .logo {
+    float: none;
+    width: 150px;
+    margin: 0 auto;
+  }
+  .menu {
+    float: left;
+  }
+  .menu ul {
+    padding: 0;
+  }
+  .menu a {
+    padding: 0 15px;
+    line-height: 60px;
+  }
+  .banner {
+    padding-top: 90px;
+  }
+  .banner p {
+    padding: 0 2%;
+  }
+  .box4 {
+    width: 98%;
+  }
+  .box3 {
+    width: 48%;
+  }
+  .box2 {
+    width: 98%;
+    padding: 0 5%;
+  }
+  .price .box3 {
+    width: 98%;
+    padding: 5%;
+  }
+  .service p,
+  team p {
+    padding: 0 5%;
+  }
+  .address {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu ul {
+    text-align: center;
+  }
+  .menu a {
+    padding: 0 25px;
+    line-height: 60px;
+  }
+  footer h3 {
+    text-align: center;
+  }
+  footer p {
+    padding: 0 5%;
+    text-align: center;
+  }
+  .socialMedia ul {
+    float: center;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu a {
+    padding: 0 26px;
+  }
+  .banner h3 {
+    font-size: 4em;
+  }
+  .banner p {
+    font-size: 2em;
+  }
+  .box3 {
+    width: 98%;
+    padding: 3%;
+  }
+  footer .formulario input[type="text"],
+  footer .formulario input[type="email"] {
+    width: 98%;
+  }
+  .cliente {
+    display: none;
+  }
 }
