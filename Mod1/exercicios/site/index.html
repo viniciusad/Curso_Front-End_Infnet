@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4ae">
+    <link rel="shortcut icon" href="img/favicon.png">
     <title>Agency WebSite</title>
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -75,22 +78,22 @@
             <div class="container">
                 <h2 class="titulo">Portfolio</h2>
                 <article class="box3">
-                    <a href="#"><img src="img/portfolio01.jpg" alt="Foto 01"></a>
+                    <a href="img/portfolio01_lg.jpg" data-lightbox="portfolio" data-title="foto 1"><img src="img/portfolio01.jpg" alt="Foto 01"></a>
                 </article>
                 <article class="box3">
-                    <a href="#"><img src="img/portfolio02.jpg" alt="Foto 02"></a>
+                    <a href="img/portfolio02_lg.jpg" data-lightbox="portfolio" data-title="foto 2"><img src="img/portfolio02.jpg" alt="Foto 02"></a>
                 </article>
                 <article class="box3">
-                    <a href="#"><img src="img/portfolio03.jpg" alt="Foto 03"></a>
+                    <a href="img/portfolio03_lg.jpg" data-lightbox="portfolio" data-title="foto 3"><img src="img/portfolio03.jpg" alt="Foto 03"></a>
                 </article>
                 <article class="box3">
-                    <a href="#"><img src="img/portfolio04.jpg" alt="Foto 04"></a>
+                    <a href="img/portfolio04_lg.png" data-lightbox="portfolio" data-title="foto 4"><img src="img/portfolio04.jpg" alt="Foto 04"></a>
                 </article>
                 <article class="box3">
-                    <a href="#"><img src="img/portfolio05.jpg" alt="Foto 05"></a>
+                    <a href="img/portfolio05_lg.jpg" data-lightbox="portfolio" data-title="foto 5"><img src="img/portfolio05.jpg" alt="Foto 05"></a>
                 </article>
                 <article class="box3">
-                    <a href="#"><img src="img/portfolio06.jpg" alt="Foto 06"></a>
+                    <a href="img/portfolio06_lg.jpg" data-lightbox="portfolio" data-title="foto 6"><img src="img/portfolio06.jpg" alt="Foto 06"></a>
                 </article>
                 <div class="alinha-btn-lg">
                     <button class="btn-lg">See all works</button>
@@ -267,5 +270,16 @@
             </section>
         </div>
     </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+          albumLabel: "Foto %1 de %2",
+          fitImagesInViewport: true,
+          disableScrolling: true,
+          wrapAround: true,
+          fadeDuration: 300
+        })
+    </script>
 </body>
 </html>
