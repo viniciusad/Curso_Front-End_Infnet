@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 3</title>
+    <link rel="stylesheet" type="text/css" href="./css/a20210126.css"> 
+</head>
+<body>
+    <h1>Calculos com Javascript</h1>
+    Valor 1: <input type="number" id="v1">
+    <br>
+    Valor 2: <input type="number" id="v2">
+    <br>
+    <input type="button" value="soma" onclick="funcao1()"> 
+    <input type="button" value="subtracao" onclick="funcao2()"> 
+    <input type="button" value="multiplicacao" onclick="funcao3()"> 
+    <input type="button" value="divisao" onclick="funcao4()"> 
+    <br>
+    Resultado: <input type="number" id="total">
+    <!-- Outros tipos de botões: SUBMIT (envia formulário) e RESET (reinicia formulário) -->
+    <script>
+        function funcao1() {
+            var valor1 = eval(document.getElementById('v1').value);
+            var valor2 = eval(document.getElementById('v2').value);
+            var resultado = eval(document.getElementById('total').value);
+            
+            document.getElementById('total').value = valor1 + valor2;
+        }
+        function funcao2() {
+            var valor1 = eval(document.getElementById('v1').value);
+            var valor2 = eval(document.getElementById('v2').value);
+            
+            document.getElementById('total').value = valor1 - valor2;
+        }
+        function funcao3() {
+            var valor1 = eval(document.getElementById('v1').value);
+            var valor2 = eval(document.getElementById('v2').value);
+            
+            document.getElementById('total').value = valor1 * valor2;
+        }
+        function funcao4() {
+            var valor1 = eval(document.getElementById('v1').value);
+            var valor2 = eval(document.getElementById('v2').value);
+            
+            document.getElementById('total').value = valor1 / valor2;
+        }
+    </script>
+</body>
+</html>

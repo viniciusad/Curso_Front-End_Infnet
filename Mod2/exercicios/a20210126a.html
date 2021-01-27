@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4</title>
+    <link rel="stylesheet" type="text/css" href="../css/a20210126.css"> 
+</head>
+<body>
+    <h1 id="titulo">Digite para Editar o Título</h1>
+    Valor 1: <input type="text" id="v1" oninput="_copiar()">
+    <br>
+    <br>
+    <input type="button" value="Editar Título..." onclick="_copiar2()"> 
+    <input type="button" value="Formatar Título..." onclick="_copiar3()"> 
+    <script>
+        function _copiar() {
+            var valor1 = document.getElementById('v1');
+            var titulo = document.getElementById('titulo');
+            titulo.innerHTML = valor1.value;
+        }
+        function _copiar2() {
+            var valor1 = document.getElementById('v1').value;
+            document.getElementById('titulo').innerHTML = valor1;
+            document.getElementById('v1').value = '';
+        }
+        function _copiar3() {
+            var valor1 = document.getElementById('titulo').style;
+            
+            valor1.color = '#9ff';
+            valor1.textDecoration = 'underline';
+        }
+    </script>
+    <noscript>
+        <h1 style="color: red;">O JavaScript do navegador está desabilitado!</h1>
+    </noscript>
+</body>
+</html>

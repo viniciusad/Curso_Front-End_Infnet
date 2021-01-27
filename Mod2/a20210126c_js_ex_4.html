@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4</title>
+    <link rel="stylesheet" type="text/css" href="./css/a20210126.css"> 
+</head>
+<body>
+    <h1>Exemplo 4 JavaScript</h1>
+    Valor 1: <input type="text" id="v1">
+    <br>
+    Valor 2: <input type="text" id="v2">
+    <br>
+    <input type="button" value="Replicar Valor 1" onclick="funcao3()"> 
+    <script>
+        function funcao3() {
+            var valor1 = document.getElementById('v1');
+            var valor2 = document.getElementById('v2');
+
+            valor2.value = valor1.value;
+            valor1.value = "";  //Aspas SEM ESPAÇO representa VAZIO
+        }
+    </script>
+    <noscript>
+        <h1 style="color: red;">O JavaScript do navegador está desabilitado!</h1>
+    </noscript>
+</body>
+</html>
