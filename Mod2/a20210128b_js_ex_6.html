@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 6</title>
+    <link rel="stylesheet" type="text/css" href="./css/a20210128.css"> 
+</head>
+<body>
+    <h1>Funções JavaScript</h1>
+    <p>
+        <a href="https://viniciusad.com" target="_blank" style="color: azure;" onclick="return funcao6()"> Meu Portfólio </a>
+    </p>
+
+    <br>
+    <input type="text" id="texto">
+    <input type="button" value="LIMPAR" onclick="document.getElementById('texto').value = ''">
+    <br>
+    <br>
+    <br>
+    <input type="button" value="Ex.1 TXT" onclick="funcao1()">
+    <input type="button" value="Ex.2 NOME" onclick="funcao2('Vini')">
+    <input type="button" value="Ex.3 SOMA" onclick="somar(5,5)">
+    <br>
+    <br>
+    <input type="button" value="Ex.4 SOMA2" onclick="funcao4()">
+    <input type="button" value="Ex.5 SOMA3" onclick="alert(funcao5())">
+    <input type="button" value="Ex.6 SOMA4" onclick="somar(10, funcao5())">
+
+    <noscript>
+        <h1 style="color: red;">O JavaScript do navegador está desabilitado!</h1>
+    </noscript>
+    <script type="text/javascript" src="./js/a20210128b.js"></script>
+</body>
+</html>
