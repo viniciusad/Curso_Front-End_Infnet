@@ -22,3 +22,18 @@ if (media>=7 && faltas <4) {
 } else {
     console.log('Aluno Reprovado');
 }
+
+
+var clube = 'Botafogo';
+
+if (clube=='Flamengo') {
+    console.logconsole.log('Hino do Flamengo');
+} else if (clube=='Vasco') {
+    console.log('Hino do Vasco');
+} else if (clube=='Fluminense') {
+    console.log('Hino do Fluminense');
+} else if (clube =='Botafogo') {
+    console.log('Hino do Botafogo');
+} else {
+    console.log('sem time');
+}
