@@ -8,3 +8,11 @@ function funcao1() {
             
     document.getElementById('total').value = valor1 + valor2 + valor3 + valor4 + valor5;
 }
+
+function limpaCampo() {
+document.getElementById('v1').value = '0';
+document.getElementById('v2').value = '0';
+document.getElementById('v3').value = '0';
+document.getElementById('v4').value = '0';
+document.getElementById('v5').value = '0';
+}

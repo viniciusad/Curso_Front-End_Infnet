@@ -22,13 +22,14 @@
             <input class="col user-input" type="number" id="v5" placeholder="Valor 5" value="0" pattern="[0-9]">
         </div>
         <div class="row justify-content-center">
-            <button class="buttons" onclick="funcao1()">+</button>
+            <button class="buttons" onclick="funcao1()">+</button> 
             <!-- <button class="buttons" onclick="funcao2()">-</button>
             <button class="buttons" onclick="funcao3()">x</button>
             <button class="buttons" onclick="funcao4()">/</button> -->
         </div>
         <div class="row justify-content-center">
-            <input class="col user-input" type="text" id="total" placeholder="Total" onkeypress="return false;">
+            <input class="col user-input" type="text" id="total" placeholder="Total" onkeypress="return false;" ondblclick="limpaCampo()">
+            <!-- <input class="col user-input" type="button" id="total" placeholder="Total" onclick="limpaCampo()"> -->
         </div>
     </div>
     <!-- Outros tipos de botões: SUBMIT (envia formulário) e RESET (reinicia formulário) -->
