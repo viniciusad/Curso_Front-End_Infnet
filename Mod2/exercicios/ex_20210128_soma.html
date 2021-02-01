@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/ex_20210128_calc.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Soma com Javascript</h1>
+        <div class="row justify-content-center">
+            <input class="col user-input" type="number" id="v1" placeholder="Valor 1" value="0" pattern="[0-9]">
+            <input class="col user-input" type="number" id="v2" placeholder="Valor 2" value="0" pattern="[0-9]">
+            <input class="col user-input" type="number" id="v3" placeholder="Valor 3" value="0" pattern="[0-9]">
+            <input class="col user-input" type="number" id="v4" placeholder="Valor 4" value="0" pattern="[0-9]">
+            <input class="col user-input" type="number" id="v5" placeholder="Valor 5" value="0" pattern="[0-9]">
+        </div>
+        <div class="row justify-content-center">
+            <button class="buttons" onclick="funcao1()">+</button>
+            <!-- <button class="buttons" onclick="funcao2()">-</button>
+            <button class="buttons" onclick="funcao3()">x</button>
+            <button class="buttons" onclick="funcao4()">/</button> -->
+        </div>
+        <div class="row justify-content-center">
+            <input class="col user-input" type="text" id="total" placeholder="Total" onkeypress="return false;">
+        </div>
+    </div>
+    <!-- Outros tipos de botões: SUBMIT (envia formulário) e RESET (reinicia formulário) -->
+
+    <script type="text/javascript" src="../js/a20210126_soma.js"></script>
+</body>
+</html>
