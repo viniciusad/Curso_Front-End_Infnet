@@ -16,3 +16,7 @@ document.getElementById('v3').value = '0';
 document.getElementById('v4').value = '0';
 document.getElementById('v5').value = '0';
 }
+
+function onlyNumbers() {
+    return event.charCode >= 48 && event.charCode <= 57
+}
