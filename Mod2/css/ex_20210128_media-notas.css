@@ -1,0 +1,93 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: #272822;
+  padding: 10px;
+}
+.user-input {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+label {
+    font-size: 1em;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+.output {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 180px;
+  border: none;
+  margin: 5px 0;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Styles */
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Seventh Button */
+#button-average {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#button-average a {
+  position: relative;
+  left: 0;
+  transition: all .35s ease-Out;
+}
+#dub-arrow {
+  width: 100%;
+  height: 100%;
+  background: #BFC0C0;
+  left: -200px;
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+#button-average img {
+  width: 30px;
+  height: auto;
+}
+#button-average:hover #dub-arrow {
+  left: 0;
+}
+#button-average:hover a {
+  left: 150px;
+}

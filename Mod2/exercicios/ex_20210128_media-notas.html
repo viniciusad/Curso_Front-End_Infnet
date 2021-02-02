@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/ex_20210128_media-notas.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Média Aluno</h1>
+        <div class="row justify-content-center">
+            <input class="col-8 user-input" type="number" id="v1" placeholder="P 1" value="" onblur="somaNotas()" onkeypress="onlyNumbers()">
+            <input class="col-8 user-input" type="number" id="v2" placeholder="P 2" value="" onblur="somaNotas()" onkeypress="onlyNumbers()">
+            <input class="col-8 user-input" type="number" id="v3" placeholder="P 3" value="" onblur="somaNotas()" onkeypress="onlyNumbers()">
+        </div>
+        <div class="row justify-content-center">
+            <button class="button" id="button-average" onclick="mediaAluno()">
+                <div id="dub-arrow"><img src="https://www.pikpng.com/pngl/m/39-390937_png-file-svg-take-note-icon-png-clipart.png" alt="Calcular Média">
+                </div>
+                <a id="">Calcular Média</a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="output">
+                <label>RESULTADO</label>
+                <input class="user-input" type="text" id="total" placeholder="Total" onkeypress="return false;" onfocus="limpaCampo2()">
+            </div>
+            <div class="output">
+                <label>MÉDIA FINAL</label>
+                <input class="user-input" type="text" id="media" placeholder="Media" onkeypress="return false;" onfocus="limpaCampo2()">
+            </div>
+        <div class="row justify-content-center">
+            <div class="output">
+                <label>Status Aluno</label>
+                <input class="user-input" type="text" id="status" placeholder="status" onkeypress="return false;" onfocus="limpaCampo2()">
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Outros tipos de botões: SUBMIT (envia formulário) e RESET (reinicia formulário) -->
+
+    <script type="text/javascript" src="../js/a20210126_media-notas.js"></script>
+</body>
+</html>
