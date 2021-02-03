@@ -17,10 +17,10 @@ body {
   position: relative;
 }
 label {
-    font-size: 1em;
-    display: inline-block;
-    width: 150px;
-    text-align: center;
+  font-size: 1em;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
 }
 .output {
   display: flex;
@@ -40,7 +40,7 @@ label {
   display: inline-flex;
   height: 40px;
   width: 150px;
-  border: 2px solid #BFC0C0;
+  border: 2px solid #bfc0c0;
   margin: 20px 20px 20px 20px;
   color: #000;
   text-transform: uppercase;
@@ -66,19 +66,19 @@ a {
 #button-average a {
   position: relative;
   left: 0;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
 }
 #dub-arrow {
   width: 100%;
   height: 100%;
-  background: #BFC0C0;
+  background: #bfc0c0;
   left: -200px;
   position: absolute;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
   bottom: 0;
 }
 #button-average img {
