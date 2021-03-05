@@ -23,7 +23,6 @@ $('#texto2').datepicker();
 
 
 
-$(document).ready(function() {
     $(".banner").vegas({
         slides: [
             {src: "./assets/img1-500x500.jpg"},
@@ -36,8 +35,6 @@ $(document).ready(function() {
         ],
         transition: 'zoomOut'
     })
-})
 
-$do
 
 /*===========AULA PARTE 2=============*/
